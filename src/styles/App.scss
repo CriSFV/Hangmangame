@@ -1,5 +1,11 @@
 // COMMON STYLES
 
+.title {
+  display: block;
+  font-size: 1.25rem;
+  line-height: 1;
+  text-align: center;
+}
 // PAGE
 
 .page {
@@ -15,12 +21,6 @@
 }
 
 // MAIN
-.title {
-  display: block;
-  font-size: 1.25rem;
-  line-height: 1;
-  text-align: center;
-}
 
 .main {
   display: flex;
