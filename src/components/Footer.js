@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import '../styles/Footer.scss';
 
 const Footer = () => {
@@ -6,22 +7,43 @@ const Footer = () => {
       <nav>
         <ul className='footer__menu'>
           <li className='footer__menu-item'>
-            <a className='footer__menu-link' href='/'>
+            <NavLink
+              className={(navData) => {
+                return navData.isActive
+                  ? 'footer__menu-link active'
+                  : 'footer__menu-link ';
+              }}
+              to='/'
+            >
               A jugar
-            </a>
+            </NavLink>
           </li>
 
           <li className='footer__menu-item'>
-            <a className='footer__menu-link active' href='/instructions'>
+            <NavLink
+              className={(navData) => {
+                return navData.isActive
+                  ? 'footer__menu-link active'
+                  : 'footer__menu-link ';
+              }}
+              to='/instructions'
+            >
               ¿Cómo se juega?
-            </a>
+            </NavLink>
           </li>
 
-          {/* <li className='footer__menu-item'>
-            <a className='footer__menu-link' href='/options'>
-              Más opciones
-            </a>
-          </li> */}
+          <li className='footer__menu-item'>
+            <NavLink
+              className={(navData) => {
+                return navData.isActive
+                  ? 'footer__menu-link active'
+                  : 'footer__menu-link ';
+              }}
+              to='/options'
+            >
+              Mas opciones
+            </NavLink>
+          </li>
         </ul>
       </nav>
       <small className='footer__copy'>© Adalab</small>

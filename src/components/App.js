@@ -54,7 +54,7 @@ function App() {
             />
           }
         />
-        <Route path='/instructions' exact element={<Instructions />} />
+        <Route path='/instructions' element={<Instructions />} />
       </Routes>
 
       <Footer />
