@@ -28,6 +28,13 @@
   }
 }
 
+.underconstruction {
+  margin-top: 10px;
+  animation-name: underConstruction;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
 @keyframes borderBottomInput {
   from {
     border-bottom-color: white;
@@ -37,5 +44,17 @@
   }
   to {
     border-bottom-color: white;
+  }
+}
+
+@keyframes underConstruction {
+  from {
+    font-size: 14px;
+  }
+  50% {
+    font-size: 16px;
+  }
+  to {
+    font-size: 14px;
   }
 }

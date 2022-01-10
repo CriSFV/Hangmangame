@@ -18,6 +18,9 @@ export const Options = () => {
         <NavLink to='/userGame' className='user__button'>
           Jugar
         </NavLink>
+        <small className='underconstruction'>
+          *Esta opción aún no está desarrollada completamente
+        </small>
       </form>
     </>
   );
