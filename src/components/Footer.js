@@ -1,21 +1,24 @@
 import '../styles/Footer.scss';
+
 const Footer = () => {
   return (
     <footer className='footer'>
       <nav>
         <ul className='footer__menu'>
           <li className='footer__menu-item'>
-            <a className='footer__menu-link' href='#/'>
+            <a className='footer__menu-link' href='/'>
               A jugar
             </a>
           </li>
+
           <li className='footer__menu-item'>
-            <a className='footer__menu-link active' href='#/instructions'>
+            <a className='footer__menu-link active' href='/instructions'>
               ¿Cómo se juega?
             </a>
           </li>
+
           <li className='footer__menu-item'>
-            <a className='footer__menu-link' href='#/options'>
+            <a className='footer__menu-link' href='/options'>
               Más opciones
             </a>
           </li>

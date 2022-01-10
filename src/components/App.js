@@ -3,11 +3,9 @@ import '../styles/Form.scss';
 import { useState, useEffect } from 'react';
 import callToApi from '../services/api';
 import Header from './Header';
-import Dummy from './Dummy';
-import SolutionLetters from './SoluctionLetters';
-import ErrorLetters from './ErrorLetters';
-import Form from './Form';
+
 import Footer from './Footer';
+import { Main } from './Main';
 
 function App() {
   const [userLetter, setUserLetter] = useState([]); //donde se almacena las letras de la jugadora (todas)
@@ -41,15 +39,13 @@ function App() {
   return (
     <div className='page'>
       <Header />
-
-      <main className='main'>
-        <section>
-          <SolutionLetters word={word} userLetter={userLetter} />
-          <ErrorLetters word={word} userLetter={userLetter} />
-          <Form handlerLetter={handlerLetter} lastLetter={lastLetter} />
-        </section>
-        <Dummy numberError={numberError()} />
-      </main>
+      <Main
+        word={word}
+        userLetter={userLetter}
+        handlerLetter={handlerLetter}
+        lastLetter={lastLetter}
+        numberError={numberError}
+      />
       <Footer />
     </div>
   );
