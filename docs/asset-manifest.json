@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "./Hangmangame/static/css/main.7f8980e6.chunk.css",
-    "main.js": "./Hangmangame/static/js/main.145d26e8.chunk.js",
-    "main.js.map": "./Hangmangame/static/js/main.145d26e8.chunk.js.map",
-    "runtime-main.js": "./Hangmangame/static/js/runtime-main.af8d05c4.js",
-    "runtime-main.js.map": "./Hangmangame/static/js/runtime-main.af8d05c4.js.map",
-    "static/js/2.67428cde.chunk.js": "./Hangmangame/static/js/2.67428cde.chunk.js",
-    "static/js/2.67428cde.chunk.js.map": "./Hangmangame/static/js/2.67428cde.chunk.js.map",
-    "index.html": "./Hangmangame/index.html",
-    "static/css/main.7f8980e6.chunk.css.map": "./Hangmangame/static/css/main.7f8980e6.chunk.css.map",
-    "static/js/2.67428cde.chunk.js.LICENSE.txt": "./Hangmangame/static/js/2.67428cde.chunk.js.LICENSE.txt",
-    "static/media/App.scss": "./Hangmangame/static/media/blackboard.7288f09f.jpeg"
+    "main.css": "./static/css/main.7f8980e6.chunk.css",
+    "main.js": "./static/js/main.dbd2bc88.chunk.js",
+    "main.js.map": "./static/js/main.dbd2bc88.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.7ad783a2.js",
+    "runtime-main.js.map": "./static/js/runtime-main.7ad783a2.js.map",
+    "static/js/2.67428cde.chunk.js": "./static/js/2.67428cde.chunk.js",
+    "static/js/2.67428cde.chunk.js.map": "./static/js/2.67428cde.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.7f8980e6.chunk.css.map": "./static/css/main.7f8980e6.chunk.css.map",
+    "static/js/2.67428cde.chunk.js.LICENSE.txt": "./static/js/2.67428cde.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "./static/media/blackboard.7288f09f.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.af8d05c4.js",
+    "static/js/runtime-main.7ad783a2.js",
     "static/js/2.67428cde.chunk.js",
     "static/css/main.7f8980e6.chunk.css",
-    "static/js/main.145d26e8.chunk.js"
+    "static/js/main.dbd2bc88.chunk.js"
   ]
 }
