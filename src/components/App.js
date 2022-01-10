@@ -8,6 +8,7 @@ import Footer from './Footer';
 import { Main } from './Main';
 import { Route, Routes } from 'react-router-dom';
 import Instructions from './Instructions';
+import { Options } from './Options';
 
 function App() {
   const [userLetter, setUserLetter] = useState([]); //donde se almacena las letras de la jugadora (todas)
@@ -55,6 +56,7 @@ function App() {
           }
         />
         <Route path='/instructions' element={<Instructions />} />
+        <Route path='/options' element={<Options />} />
       </Routes>
 
       <Footer />
