@@ -6,6 +6,8 @@ import Header from './Header';
 
 import Footer from './Footer';
 import { Main } from './Main';
+import { Route, Routes } from 'react-router-dom';
+import Instructions from './Instructions';
 
 function App() {
   const [userLetter, setUserLetter] = useState([]); //donde se almacena las letras de la jugadora (todas)
@@ -39,13 +41,22 @@ function App() {
   return (
     <div className='page'>
       <Header />
-      <Main
-        word={word}
-        userLetter={userLetter}
-        handlerLetter={handlerLetter}
-        lastLetter={lastLetter}
-        numberError={numberError}
-      />
+      <Routes>
+        <Route
+          path='/'
+          element={
+            <Main
+              word={word}
+              userLetter={userLetter}
+              handlerLetter={handlerLetter}
+              lastLetter={lastLetter}
+              numberError={numberError}
+            />
+          }
+        />
+        <Route path='/instructions' element={<Instructions />} />
+      </Routes>
+
       <Footer />
     </div>
   );

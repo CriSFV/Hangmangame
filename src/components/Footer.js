@@ -17,11 +17,11 @@ const Footer = () => {
             </a>
           </li>
 
-          <li className='footer__menu-item'>
+          {/* <li className='footer__menu-item'>
             <a className='footer__menu-link' href='/options'>
               Más opciones
             </a>
-          </li>
+          </li> */}
         </ul>
       </nav>
       <small className='footer__copy'>© Adalab</small>
