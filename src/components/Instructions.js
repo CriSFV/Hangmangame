@@ -1,4 +1,5 @@
 import '../styles/Instructions.scss';
+import { NavLink } from 'react-router-dom';
 
 const Instructions = () => {
   return (
@@ -10,7 +11,16 @@ const Instructions = () => {
         solución y si no, se añadirá a las letras falladas. Ten cuidado o lo
         ahorcarás.
       </p>
-      <p>¡A jugar!</p>
+      <NavLink to='/' className='user__button'>
+        ¡A jugar!
+      </NavLink>
+      <p>
+        También tienes otra manera de jugar si estás en grupo... en 'Mas
+        opciones' escribe la palabra que quieras sin que te vean...{' '}
+      </p>
+      <NavLink to='/options' className='user__button'>
+        ¡Escribe tu palabra!
+      </NavLink>
     </section>
   );
 };

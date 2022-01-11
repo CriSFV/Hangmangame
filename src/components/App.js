@@ -22,6 +22,13 @@ function App() {
     });
   }, []);
 
+  //palabra incluida en options:
+  const userWord = (userWord) => {
+    setWord(userWord);
+    setLastLetter('');
+    setUserLetter([]);
+  };
+  console.log(word);
   const handlerLetter = (ev) => {
     let regex = new RegExp('^[a-zA-Z]$'); // letras permitidas, el resto no lo están
     // si la letra esta permitida:
@@ -56,7 +63,7 @@ function App() {
           }
         />
         <Route path='/instructions' element={<Instructions />} />
-        <Route path='/options' element={<Options />} />
+        <Route path='/options' element={<Options userWord={userWord} />} />
       </Routes>
 
       <Footer />

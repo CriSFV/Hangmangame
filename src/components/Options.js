@@ -1,21 +1,31 @@
 import '../styles/Options.scss';
+
 import { NavLink } from 'react-router-dom';
 
-export const Options = () => {
+export const Options = (props) => {
+  const handlePrevent = (ev) => {
+    ev.preventDefault();
+  };
+  const handleChange = (ev) => {
+    props.userWord(ev.target.value);
+  };
   return (
     <>
-      <form className='user__form'>
-        <label className='title' htmlFor='user__word'>
-          Incluye la palabra con la que quieres jugar:
+      <form className='user__form' onSubmit={handlePrevent}>
+        <label className='title' htmlFor='word'>
+          Escribe aquí la palabra que hay que adivinar:
         </label>
         <input
+          autoFocus
           autoComplete='off'
-          className='user__form__input'
+          className='form__input'
+          maxLength='15'
           type='text'
-          name='user__word'
-          id='user__word'
+          id='word'
+          name='word'
+          onChange={handleChange}
         />
-        <NavLink to='/userGame' className='user__button'>
+        <NavLink to='/' className='user__button'>
           Jugar
         </NavLink>
         <small className='underconstruction'>
