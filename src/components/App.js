@@ -22,13 +22,13 @@ function App() {
     });
   }, []);
 
-  //palabra incluida en options:
+  //palabra incluida por usuario:
   const userWord = (userWord) => {
     setWord(userWord);
     setLastLetter('');
     setUserLetter([]);
   };
-  console.log(word);
+
   const handlerLetter = (ev) => {
     let regex = new RegExp('^[a-zA-Z]$'); // letras permitidas, el resto no lo están
     // si la letra esta permitida:
